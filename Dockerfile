@@ -12,6 +12,7 @@ RUN apt-get update -y \
 ADD pom.xml /usr/petclinic/pom.xml
 ADD src /usr/petclinic/src
 
+
 ADD entrypoint.sh /usr/petclinic/entrypoint.sh
 RUN chmod a+x /usr/petclinic/entrypoint.sh
 RUN ["/usr/petclinic/entrypoint.sh"]
